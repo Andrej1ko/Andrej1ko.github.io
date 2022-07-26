@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Earn Coins </title>
+    <style type="text/css">
+      h1{
+        background-color: black;
+        color: crimson;
+        font-size: 2em;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-family: arial;
+      }
+    </style>
+    <link rel="stylesheet" href="stylee.css">
+   </head>
+<body>
+  <h1>You can earn coins with this timer</h1>
+  <h1>Every 15 seconds you earn 1 Hypixel coin</h1>
+  <div class="wrapper">
+    <div class="time">
+      <span class="hour">00</span>
+      <span class="colon">:</span>
+      <span class="minute">00</span>
+      <span class="colon">:</span>
+      <span class="second">00</span>
+      <span class="colon ms-colon">:</span>
+      <span class="millisecond">00</span>
+    </div>
+    <div class="buttons">
+      <button class="start">Start</button>
+      <button class="stop">Stop</button>
+      <button class="reset">Reset</button>
+    </div>
+  </div>
+
+  <script src="scriptee.js"></script>
+
+<h1>Check FAQ if you need help or if u dont find help there join our discord and open ticket</h1>
+<div class="accordion">
+  <div class="image-box">
+    <img src="images/mainImg.png" alt="">
+  </div>
+  <div class="accordion-text">
+    <div class="title">FAQ</div>
+  <ul class="faq-text">
+    <li>
+      <div class="question-arrow">
+        <span class="question">What do you mean by HTML & CSS?</span>
+        <i class="bx bxs-chevron-down arrow"></i>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, doloribus.</p>
+      <span class="line"></span>
+    </li>
+    <li>
+      <div class="question-arrow">
+        <span class="question">What do you mean by JavaScript?</span>
+        <i class="bx bxs-chevron-down arrow"></i>
+      </div>
+      <p>JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive</p>
+      <span class="line"></span>
+    </li>
+    <li>
+      <div class="question-arrow">
+        <span class="question">From where you learned HTML & CSS?</span>
+        <i class="bx bxs-chevron-down arrow"></i>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, necessitatibus.</p>
+      <span class="line"></span>
+    </li>
+    <li>
+      <div class="question-arrow">
+        <span class="question">Which code editor do you use?</span>
+        <i class="bx bxs-chevron-down arrow"></i>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, labore.</p>
+      <span class="line"></span>
+    </li>
+    <li>
+      <div class="question-arrow">
+        <span class="question">Software you use for video editing?</span>
+        <i class="bx bxs-chevron-down arrow"></i>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, repudiandae!</p>
+      <span class="line"></span>
+    </li>
+  </ul>
+  </div>
+</div>
+
+
+<script>
+  let li = document.querySelectorAll(".faq-text li");
+  for (var i = 0; i < li.length; i++) {
+    li[i].addEventListener("click", (e)=>{
+      let clickedLi;
+      if(e.target.classList.contains("question-arrow")){
+        clickedLi = e.target.parentElement;
+      }else{
+        clickedLi = e.target.parentElement.parentElement;
+      }
+     clickedLi.classList.toggle("showAnswer");
+    });
+  }
+</script>
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col">
+        <h4>Follow us</h4>
+        <ul>
+          <li><a href="#">about us</a></li>
+          <li><a href="#">our services</a></li>
+          <li><a href="#">privacy policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>get help</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">shipping</a></li>
+          <li><a href="#">returns</a></li>
+          <li><a href="#">order status</a></li>
+          <li><a href="#">payment options</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>online shop</h4>
+        <ul>
+          <li><a href="#">watch</a></li>
+          <li><a href="#">bag</a></li>
+          <li><a href="#">shoes</a></li>
+          <li><a href="#">dress</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
